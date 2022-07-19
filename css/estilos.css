@@ -126,7 +126,8 @@ button .card__button :hover{
     transform: scale(1.25,1.25);
 }
 
-.main__boton {
+.main__boton{
+    
     grid-column: 2/3;
     grid-row: 2/3;
     display: flex;
@@ -135,7 +136,10 @@ button .card__button :hover{
     padding:10px;
 }
 
-<<<<<<< HEAD
+.main__boton :hover {
+    transform: scale(1.05,1.05);
+}
+
 button{
     width: 500px;
     height: 70px;
@@ -144,10 +148,6 @@ button{
     border: yellow solid 10px;
     border-radius: 15px;
     padding: 10px;
-=======
-.main__boton :hover{
-    transform: scale(1.05,1.05);
->>>>>>> agrego-animacion
 }
 
 
