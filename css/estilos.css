@@ -111,15 +111,6 @@ main{
     grid-template-rows: 1fr 1fr ;
 }
 
-.main__boton{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding:10px;
-}
-
 button{
     width: 500px;
     height: 70px;
@@ -128,7 +119,38 @@ button{
     border: yellow solid 10px;
     border-radius: 15px;
     padding: 10px;
+
 }
+
+button .card__button :hover{
+    transform: scale(1.25,1.25);
+}
+
+.main__boton {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding:10px;
+}
+
+<<<<<<< HEAD
+button{
+    width: 500px;
+    height: 70px;
+    font-size: 32px;
+    background-color: yellow;
+    border: yellow solid 10px;
+    border-radius: 15px;
+    padding: 10px;
+=======
+.main__boton :hover{
+    transform: scale(1.05,1.05);
+>>>>>>> agrego-animacion
+}
+
+
 /* TERMINA HOME */ 
 
 /* COMIENZA PRODCUTOS */
@@ -146,7 +168,7 @@ button{
     margin-bottom: 20px;
 }
 
-.card{
+.card {
     width: 300px;
     height: auto;
     display: flex;
@@ -158,6 +180,12 @@ button{
     border: 1px solid #d4d4d4;
 }
 
+/* .card :hover{
+    transform: scale(1.05,1.05);
+
+} */
+
+
 .card__img{
     width: 100%;
     height: 100%;
@@ -168,6 +196,7 @@ button{
     padding: 10px;
     margin:5px;
 }
+
 
 .card__button {
     width:auto;
@@ -183,6 +212,9 @@ button{
     padding: 5px;
     margin: auto;
 }
+
+
+
 
 /* TERMINA PRODUCTOS */
 
@@ -320,6 +352,11 @@ footer{
     margin: 12px;
 }
 
+.iconos:hover{
+    transform: scale(1.15,1.15);
+
+}
+
 .footer__formas-de-pago{
     grid-area: formas-de-pago;
     display: flex;
@@ -329,30 +366,30 @@ footer{
 
 /* MEDIA DE CELULAR */ 
 
-@media ( min-width 320px ) and ( max-width 575px) {
+/* @media ( min-width 320px ) and ( max-width 575px) {
     }
     
     /* BARRA DE NAVEGACION */
 
     
 
-.header__lista ul {
+/* .header__lista ul {
     flex-direction: column;
-} 
-/*  MAIN- INDEX  */
+} /* 
+/*  MAIN- INDEX  */ 
 
-.main__boton button {
+/* .main__boton button {
     grid-column: 1/2;
     grid-row: 2/3;
     justify-content: center;
     align-items:center;
 }
-
+ */
 
 /* FOOTER */
 
 /* MEDIA QUIERIE DE TABLET  */
 
-@media ( min-width 576px ) and ( max-width 992px) {
+/* @media ( min-width 576px ) and ( max-width 992px) {
 
-}
+} */
