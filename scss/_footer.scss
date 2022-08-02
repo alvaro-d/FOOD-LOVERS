@@ -1,0 +1,56 @@
+footer{
+    display: grid;
+    grid-template-areas:"indice mapa redes"
+                        "indice mapa formas-de-pago"; 
+    background-color: rgb(197, 226, 32);
+    padding: 24px;
+    
+    .footer {
+        
+        &__indice{
+            grid-area: indice;
+        }
+        
+        &__mapa{
+            grid-area: mapa;
+        }
+        
+        
+        &__indice ul li {
+            font-size: 16px;
+            text-decoration: none;
+            padding: 5px;
+        }
+        
+        
+        
+        &__redes{
+            grid-area:redes;
+            display: flex;
+            justify-content:center;
+            align-items: flex-end;
+        
+        }
+        
+        
+        
+        &__formas-de-pago{
+            grid-area: formas-de-pago;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .iconos {
+            /* display: block; */
+            width: 50px;
+            padding: 5px;
+            margin: 12px;
+        }
+        
+        &:hover{
+            transform: scale(1.15,1.15);
+        
+        }
+    }
+}
