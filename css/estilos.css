@@ -1,0 +1,407 @@
+<<<<<<< HEAD
+=======
+
+*{
+    margin: 0px;/* MARGEN EXTERNO */
+    padding: 0px;/* MARGEN INTERNO */
+    box-sizing:border-box ;
+}
+
+selector { 
+    propiedad: red;
+}
+
+h1 {
+    color:black;
+    padding: 0 20px;
+}
+
+h3{
+    color: black;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-family: 'Courgette', cursive;
+}
+h2 {
+    font-family: 'Courgette', cursive;
+}
+
+ul{
+    list-style: none; /* elimina el puntito de la viñeta */
+    padding: 0 40px;
+    margin: 0 0 0 40px;
+}
+
+
+header{
+    position: sticky;
+    top: 0px;
+    
+}
+
+.container-fluid{
+    padding: 10px;
+    
+}
+
+.header__texto--envios{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(248, 180, 54);
+}
+
+/* .header__texto{
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+} */
+
+/* .header__nav{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+.header__lista{ 
+    display: flex;
+    list-style: none;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content:flex-end;
+    flex-grow: 3;
+} */
+
+
+.header__icono{
+    display: inline;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* .header__item{
+    display: flex;
+    padding: 7px;
+
+}
+
+.header__item a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+} */
+
+.titulo__principal {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+/* MAIN-INDEX */
+
+main{
+
+}
+/* COMIENZA HOME */ 
+.main__principal{
+    display: grid;
+    height: 100vh;
+    background-image: url(../recursos/portada-uno.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+}
+
+button{
+    width: 500px;
+    height: 70px;
+    font-size: 32px;
+    background-color: yellow;
+    border: yellow solid 10px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+button .card__button :hover{
+    transform: scale(1.25,1.25);
+}
+
+.main__boton{
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding:10px;
+}
+
+.main__boton :hover {
+    transform: scale(1.05,1.05);
+}
+
+button{
+    width: 500px;
+    height: 70px;
+    font-size: 32px;
+    background-color: yellow;
+    border: yellow solid 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+/* TERMINA HOME */ 
+
+/* COMIENZA PRODCUTOS */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container__titulo{
+    width: 100%;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: auto;
+    margin:auto;
+    align-items: center;
+    border: 1px solid #d4d4d4;
+}
+
+/* .card :hover{
+    transform: scale(1.05,1.05);
+
+} */
+
+
+.card__img{
+    width: 100%;
+    height: 100%;
+}
+
+.card__info{
+    width:auto;
+    padding: 10px;
+    margin:5px;
+}
+
+
+.card__button {
+    width:auto;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+    font-size: 16px;
+    border: yellow solid 10px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: auto;
+}
+
+
+
+
+/* TERMINA PRODUCTOS */
+/* CARROUSEL */
+
+
+/* SECCION NOSOTROS  */
+
+.imagen{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid #d4d4d4
+}
+
+.imagen__img{
+    width: 60%;
+    height: auto;
+}
+
+.imagen__info{
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.button__comprar{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+
+.video__publicitario{
+    margin: 0px 0px 0px 30px;
+    padding: 20px;
+}
+
+.form__nombre {
+    margin: 0px 0px 0px 30px;
+    /* ARRIBA DERECHA ABAJO IZQUIERDA */
+    /* ARRIBA ABAJO IZQUIERDA DERECHA */
+} 
+
+.form__mail{
+    margin: 0px 0px 0px 30px;
+}
+
+.form__telefono{
+    margin: 0px 0px 0px 30px;
+}
+
+.form__selecciona-el-dia {
+    margin: 0px 0px 0px 30px;
+}
+
+.form__selecciona-el-horario{
+    margin: 0px 0px 0px 30px;
+}
+
+.button__enviar {
+    margin: 0px 0px 0px 30px;
+    padding: 5px;
+}
+
+.button__borrar{
+    margin: 0px 0px 0px 30px;
+    padding: 5px;
+}
+.ws{
+    position: sticky;
+    bottom: 0px;
+    right: 10px;
+    left: auto;
+}
+.ws__img{
+    width: 70px;
+}
+
+footer{
+    display: grid;
+    grid-template-areas:"indice mapa redes"
+                        "indice mapa formas-de-pago"; 
+    background-color: rgb(248, 180, 54);
+    padding: 24px;
+}
+
+.footer__indice{
+    grid-area: indice;
+}
+
+.footer__mapa{
+    grid-area: mapa;
+}
+
+/* .container-footer {
+    width:auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content:flex-end; 
+} */
+
+.footer__indice ul li {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* .background__footer{
+    background-color: gray;
+} */
+
+.footer__redes{
+    grid-area:redes;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+
+}
+
+.iconos {
+    /* display: block; */
+    width: 50px;
+    padding: 5px;
+    margin: 12px;
+}
+
+.iconos:hover{
+    transform: scale(1.15,1.15);
+
+}
+
+.footer__formas-de-pago{
+    grid-area: formas-de-pago;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* MEDIA DE CELULAR */ 
+
+/* @media ( min-width 320px ) and ( max-width 575px) {
+    }
+    
+    /* BARRA DE NAVEGACION */
+
+    
+
+/* .header__lista ul {
+    flex-direction: column;
+} /* 
+/*  MAIN- INDEX  */ 
+
+/* .main__boton button {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items:center;
+}
+ */
+
+/* FOOTER */
+
+/* MEDIA QUIERIE DE TABLET  */
+
+/* @media ( min-width 576px ) and ( max-width 992px) {
+
+} */
+
+>>>>>>> boostrap

@@ -1,4 +1,67 @@
 @charset "UTF-8";
+<<<<<<< HEAD
+=======
+footer {
+  display: grid;
+  grid-template-areas: "indice mapa redes" "indice mapa formas-de-pago";
+  background-color: rgb(197, 226, 32);
+  padding: 24px;
+}
+footer .footer__indice {
+  grid-area: indice;
+}
+footer .footer__mapa {
+  grid-area: mapa;
+}
+footer .footer__indice ul li {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px;
+}
+footer .footer__redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+footer .footer__formas-de-pago {
+  grid-area: formas-de-pago;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer .footer .iconos {
+  /* display: block; */
+  width: 50px;
+  padding: 5px;
+  margin: 12px;
+}
+footer .footer:hover {
+  transform: scale(1.15, 1.15);
+}
+
+/* MEDIA DE CELULAR */
+/* @media ( min-width 320px ) and ( max-width 575px) {
+    }
+
+    /* BARRA DE NAVEGACION */
+/* .header__lista ul {
+    flex-direction: column;
+} /* 
+/*  MAIN- INDEX  */
+/* .main__boton button {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items:center;
+}
+ */
+/* FOOTER */
+/* MEDIA QUIERIE DE TABLET  */
+/* @media ( min-width 576px ) and ( max-width 992px) {
+
+} */
+>>>>>>> boostrap
 * {
   margin: 0px; /* MARGEN EXTERNO */
   padding: 0px; /* MARGEN INTERNO */
@@ -57,6 +120,7 @@ header {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .header__nav {
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +136,23 @@ header {
   flex-grow: 3;
 }
 
+=======
+/* .header__nav{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+.header__lista{ 
+    display: flex;
+    list-style: none;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content:flex-end;
+    flex-grow: 3;
+} */
+>>>>>>> boostrap
 .header__icono {
   display: inline;
   display: flex;
@@ -107,6 +188,7 @@ header {
   grid-template-rows: 1fr 1fr;
 }
 
+<<<<<<< HEAD
 button {
   width: 500px;
   height: 70px;
@@ -117,14 +199,33 @@ button {
   padding: 10px;
 }
 
+=======
+/* button{
+    width: 500px;
+    height: 70px;
+    font-size: 24px;
+    background-color: yellow;
+    border: yellow solid 10px;
+    border-radius: 15px;
+    padding: 10px;
+
+} */
+>>>>>>> boostrap
 button .card__button :hover {
   transform: scale(1.25, 1.25);
 }
 
 .main__boton {
+<<<<<<< HEAD
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
+=======
+  color: rgb(76, 114, 238);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+>>>>>>> boostrap
   justify-content: center;
   align-items: flex-end;
   padding: 10px;
@@ -135,11 +236,20 @@ button .card__button :hover {
 }
 
 button {
+<<<<<<< HEAD
   width: 500px;
   height: 70px;
   font-size: 32px;
   background-color: yellow;
   border: yellow solid 10px;
+=======
+  color: rgb(76, 114, 238);
+  width: 500px;
+  height: 70px;
+  font-size: 32px;
+  background-color: rgb(76, 114, 238);
+  border: rgb(76, 114, 238) solid 10px;
+>>>>>>> boostrap
   border-radius: 15px;
   padding: 10px;
 }
@@ -194,9 +304,15 @@ button {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   background-color: yellow;
   font-size: 16px;
   border: yellow solid 10px;
+=======
+  background-color: rgb(5, 29, 107);
+  font-size: 16px;
+  border: rgb(90, 92, 97) solid 10px;
+>>>>>>> boostrap
   border-radius: 15px;
   padding: 5px;
   margin: auto;

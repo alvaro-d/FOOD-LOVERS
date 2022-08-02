@@ -9,7 +9,11 @@
     box-sizing:border-box ;
 }
 
+<<<<<<< HEAD
 selector { 
+=======
+selector{ 
+>>>>>>> boostrap
     propiedades:red;
 }
 
@@ -59,7 +63,11 @@ header{
     text-align: center;
 }
 
+<<<<<<< HEAD
 .header__nav{
+=======
+/* .header__nav{
+>>>>>>> boostrap
     display: flex;
     flex-wrap:wrap;
 
@@ -73,7 +81,11 @@ header{
     align-items: flex-end;
     justify-content:flex-end;
     flex-grow: 3;
+<<<<<<< HEAD
 }
+=======
+} */
+>>>>>>> boostrap
 
 
 .header__icono{
@@ -116,26 +128,48 @@ main {
     grid-template-rows: 1fr 1fr ;
 }
 
+<<<<<<< HEAD
 button{
     width: 500px;
     height: 70px;
     font-size: 32px;
+=======
+
+
+
+/* button{
+    width: 500px;
+    height: 70px;
+    font-size: 24px;
+>>>>>>> boostrap
     background-color: yellow;
     border: yellow solid 10px;
     border-radius: 15px;
     padding: 10px;
 
+<<<<<<< HEAD
 }
+=======
+} */
+
+>>>>>>> boostrap
 
 button .card__button :hover{
     transform: scale(1.25,1.25);
 }
 
 .main__boton{
+<<<<<<< HEAD
     
     grid-column: 2/3;
     grid-row: 2/3;
     display: flex;
+=======
+    color:  rgb(76, 114, 238);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+>>>>>>> boostrap
     justify-content: center;
     align-items: flex-end;
     padding:10px;
@@ -146,16 +180,29 @@ button .card__button :hover{
 }
 
 button{
+<<<<<<< HEAD
     width: 500px;
     height: 70px;
     font-size: 32px;
     background-color: yellow;
     border: yellow solid 10px;
+=======
+    color: rgb(76, 114, 238);
+    width: 500px;
+    height: 70px;
+    font-size: 32px;
+    background-color: rgb(76, 114, 238);
+    border: rgb(76, 114, 238) solid 10px;
+>>>>>>> boostrap
     border-radius: 15px;
     padding: 10px;
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> boostrap
 /* TERMINA HOME */ 
 
 /* COMIENZA PRODCUTOS */
@@ -210,9 +257,15 @@ button{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     background-color: yellow;
     font-size: 16px;
     border: yellow solid 10px;
+=======
+    background-color: rgb(5, 29, 107);
+    font-size: 16px;
+    border: rgb(90, 92, 97) solid 10px;
+>>>>>>> boostrap
     border-radius: 15px;
     padding: 5px;
     margin: auto;
