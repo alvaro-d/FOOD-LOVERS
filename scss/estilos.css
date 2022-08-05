@@ -118,19 +118,19 @@ header {
 }
 
 /* .header__nav{
-    display: flex;
+  display: flex;
     flex-wrap:wrap;
 
 }
 
 .header__lista{ 
-    display: flex;
-    list-style: none;
-    padding: 5px 10px;
-    flex-wrap: wrap;
-    align-items: flex-end;
+  display: flex;
+  list-style: none;
+  padding: 5px 10px;
+  flex-wrap: wrap;
+  align-items: flex-end;
     justify-content:flex-end;
-    flex-grow: 3;
+  flex-grow: 3;
 } */
 .header__icono {
   display: inline;
@@ -168,13 +168,13 @@ header {
 }
 
 /* button{
-    width: 500px;
-    height: 70px;
+  width: 500px;
+  height: 70px;
     font-size: 24px;
-    background-color: yellow;
-    border: yellow solid 10px;
-    border-radius: 15px;
-    padding: 10px;
+  background-color: yellow;
+  border: yellow solid 10px;
+  border-radius: 15px;
+  padding: 10px;
 
 } */
 button .card__button :hover {
