@@ -10,7 +10,7 @@ $redes:(
 /* HEACH - CADA UNO */
 @each $name, $color in $redes {
     .color-#{ name }{
-        background-color: # { color};
+        background-color:#{color};
     }
 }
 
@@ -20,9 +20,9 @@ $titulos: (
     h3: 1rem
 );
 
-@each $titulos, $size  in $titulos  {
-    .tamaño-# { $titulo} {
-        background-color:# { $color};
+@each $titulos, $size  in $titulos {
+    .tamaño-#{$titulo}{
+        background-color:#{ $color};
     }
 }
 

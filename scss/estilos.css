@@ -65,8 +65,8 @@ footer .footer:hover {
   box-sizing: border-box;
 }
 
-selector {
-  propiedades: red;
+select{
+  propiedades:red;
 }
 
 h1 {
