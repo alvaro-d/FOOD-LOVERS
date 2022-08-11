@@ -1,18 +1,20 @@
 @import"variables";
 @import"operators.scss";
 @import "footer";
+@import "header";
+@import "main";
 @import"nav";
 @import"mediaquieries";
 
-*{
+* {
     margin: 0px;/* MARGEN EXTERNO */
     padding: 0px;/* MARGEN INTERNO */
     box-sizing:border-box ;
 }
 
-selector{ 
-    propiedades:red;
-}
+// select{ 
+//     property:red;
+// }
 
 h1 {
     color:black;
@@ -40,58 +42,39 @@ ul{
     margin: 0 0 0 40px;
 }
 
-
-header{
-    position: sticky;
-    top: 0px;
-    background-color: gray;
-}
-
-.header__texto--envios{
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    background-color: yellow;
-}
+/* main-index */
 
 
-.titulo__principal {
-    text-align: center;
-    font-size: 40px;
-    padding: 10px;
-}
-
-/* MAIN-INDEX */
-
-main{
-
-}
 /* COMIENZA HOME */ 
-.main__principal{
-    @extend .background-centrado; 
-    display: grid;
-    height: 100vh;
-    background-image: url(../recursos/portada-uno.jpg);
-    grid-template-columns: 1fr 2fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
-}
+
+main{ 
+    
+    .main__principal {
+        @extend .background-centrado; 
+        display: grid;
+        height: 100vh;
+        background-image: url(../recursos/portada-uno.jpg);
+        grid-template-columns: 1fr 2fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        
+        &__boton {
+            color:  rgb(76, 114, 238);
+            grid-column: 2/3;
+            grid-row: 2/3;
+            display: grid;
+            justify-content: center;
+            align-items: flex-end;
+            padding:10px;
+            }   
+        }
+    }
 
 
 
-
-button .card__button :hover{
+button .card__button :hover { 
     transform: scale(1.25,1.25);
 }
 
-.main__boton{
-    color:  rgb(76, 114, 238);
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: grid;
-    justify-content: center;
-    align-items: flex-end;
-    padding:10px;
-}
 
 .main__boton :hover {
     transform: scale(1.05,1.05);
@@ -175,28 +158,6 @@ button{
 
 /* SECCION NOSOTROS  */
 
-.imagen{
-    width:100%;
-    height:auto;
-    display: flex;
-    flex-wrap: wrap;
-    border: solid #d4d4d4
-}
-
-.imagen__img{
-    width: 60%;
-    height: auto;
-}
-
-.imagen__info{
-    margin: auto;
-    padding: 10px;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
 
 

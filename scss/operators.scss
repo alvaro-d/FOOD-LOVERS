@@ -1,31 +1,3 @@
-/* MAP= COLECCION DE VARIABLES ( CLAVE VALOR )  */
-
-$redes:( 
-    twitter:rgb(164, 245, 241),
-    facebook: blue,
-    instagram: rgb(232, 145, 240),
-    whatsapp: green
-); 
-
-/* HEACH - CADA UNO */
-@each $name, $color in $redes {
-    .color-#{ name }{
-        background-color:#{color};
-    }
-}
-
-$titulos: (
-    h1: 3rem,
-    h2: 2rem,
-    h3: 1rem
-);
-
-@each $titulos, $size  in $titulos {
-    .tamaño-#{$titulo}{
-        background-color:#{ $color};
-    }
-}
-
 
 /*  EXTEND -- EXTENDER CODIGO */
 

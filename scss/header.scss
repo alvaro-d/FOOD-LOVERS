@@ -1,0 +1,22 @@
+
+
+header {
+    
+    position: sticky;
+    top: 0px;
+    background-color: gray;
+
+    .header__titulo {
+            font-size: 40px;
+            margin: 0px;
+            padding: 10px;
+            text-align:center;
+        
+        &__texto--envios {
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(127, 231, 29);
+                }
+            }
+        }
