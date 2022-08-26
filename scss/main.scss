@@ -1,6 +1,6 @@
 
     .card{
-        @extend .card-dimensiones;
+        @extend.card-dimensiones;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -21,27 +21,27 @@
     }
 
 
-.imagen {
+.imagen{
     width:100%;
     height:auto;
     display: flex;
     flex-wrap: wrap;
     border: solid #d4d4d4
-    } 
-
-    &__img {
-        width: 60%;
-        height: auto;
     }
+
+    &__img{
+            width: 60%;
+            height: auto;
+    } */
 
     &__info {
-        margin: auto;
-        padding: 10px;
-        width: 40%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+            margin: auto;
+            padding: 10px;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
 
-    
+

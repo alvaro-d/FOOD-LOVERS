@@ -1,15 +1,15 @@
 @import"variables";
 @import"operators.scss";
 @import"nav";
-@import "header";
-@import "main";
-@import "footer";
+@import"header";
+@import"main";
+@import"footer";
 @import"mediaquieries";
 
 *{
     margin: 0px;/* MARGEN EXTERNO */
     padding: 0px;/* MARGEN INTERNO */
-    box-sizing:border-box ;
+    box-sizing:border-box;
 }
 
 /* select{ 
@@ -131,6 +131,15 @@ button .card__button :hover {
     padding: 5px;
     margin: auto;
 }
+
+.bloque_reservas{
+    width:100%;
+    height:500px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid #d4d4d4;
+    background-color: red;
+        }
 
 
 /* TERMINA PRODUCTOS */
