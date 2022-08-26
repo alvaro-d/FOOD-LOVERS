@@ -1,8 +1,19 @@
 @charset "UTF-8";
+/*  EXTEND -- EXTENDER CODIGO */
+.background-centrado {
+  background-size: cover;
+  background-position: center;
+}
+
+.card-dimensiones, .card {
+  width: 300px;
+  height: 500px;
+}
+
 footer {
   display: grid;
   grid-template-areas: "indice mapa redes" "indice mapa formas-de-pago";
-  background-color: rgb(197, 226, 32);
+  background-color: rgb(150, 173, 18);
   padding: 24px;
 }
 footer .footer__indice {
@@ -38,37 +49,17 @@ footer .footer:hover {
   transform: scale(1.15, 1.15);
 }
 
-/* MEDIA DE CELULAR */
-/* @media ( min-width 320px ) and ( max-width 575px) {
-    }
 
-    /* BARRA DE NAVEGACION */
-/* .header__lista ul {
-    flex-direction: column;
-} /* 
-/*  MAIN- INDEX  */
-/* .main__boton button {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    justify-content: center;
-    align-items:center;
-}
- */
-/* FOOTER */
-/* MEDIA QUIERIE DE TABLET  */
-/* @media ( min-width 576px ) and ( max-width 992px) {
-
-} */
 * {
   margin: 0px; /* MARGEN EXTERNO */
   padding: 0px; /* MARGEN INTERNO */
   box-sizing: border-box;
 }
 
-selector {
+/* select{
   propiedades: red;
 }
-
+ */ 
 h1 {
   color: black;
   padding: 0 20px;
@@ -98,61 +89,15 @@ ul {
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   top: 0px;
-  background-color: gray;
 }
 
 .header__texto--envios {
   margin: 0px;
   padding: 10px;
   text-align: center;
-  background-color: yellow;
-}
-
-.header__texto {
-  background-color: white;
-  font-size: 20px;
-  text-align: center;
-}
-
-.header__nav {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header__lista {
-  display: flex;
-  list-style: none;
-  padding: 5px 10px;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-grow: 3;
-}
-
-.header__icono {
-  display: inline;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.header__item {
-  display: flex;
-  padding: 7px;
-}
-
-.header__item a {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-}
-
-.titulo__principal {
-  text-align: center;
-  font-size: 40px;
-  padding: 10px;
+  background-color: green;
 }
 
 /* MAIN-INDEX */
@@ -160,55 +105,39 @@ header {
 
 } */
 /* COMIENZA HOME */
-.main__principal {
-  display: grid;
-  height: 100vh;
-  background-image: url(../recursos/portada-uno.jpg);
-  background-size: cover;
-  background-position: center;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
 
-button {
-  width: 500px;
-  height: 70px;
-  font-size: 32px;
-  background-color: yellow;
-  border: yellow solid 10px;
-  border-radius: 15px;
-  padding: 10px;
-}
-
+/* main-index */
+/* COMIENZA HOME */
 button .card__button :hover {
   transform: scale(1.25, 1.25);
 }
 
-.main__boton {
-  color: rgb(76, 114, 238);
-  grid-column: 2/3;
-  grid-row: 2/3;
-  display: grid;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 10px;
-}
 
-.main__boton :hover {
-  transform: scale(1.05, 1.05);
-}
 
-button {
-  width: 500px;
-  height: 70px;
-  font-size: 32px;
-  background-color: yellow;
-  border: yellow solid 10px;
-  border-radius: 15px;
-  padding: 10px;
-}
+
 
 /* TERMINA HOME */
+.bloque_reservas{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 600px;
+  background-color: rgb(14, 241, 128);
+}
+
+.bloque__reservas--a{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 10px;
+}
+
+
+
 /* COMIENZA PRODCUTOS */
 .container {
   display: flex;
@@ -225,8 +154,6 @@ button {
 }
 
 .card {
-  width: 300px;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -236,10 +163,6 @@ button {
   border: 1px solid #d4d4d4;
 }
 
-/* .card :hover{
-    transform: scale(1.05,1.05);
-
-} */
 .card__img {
   width: 100%;
   height: 100%;
@@ -266,36 +189,10 @@ button {
   margin: auto;
 }
 
+
+
 /* TERMINA PRODUCTOS */
 /* SECCION NOSOTROS  */
-.imagen {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  border: solid #d4d4d4;
-}
-
-.imagen__img {
-  width: 60%;
-  height: auto;
-}
-
-.imagen__info {
-  margin: auto;
-  padding: 10px;
-  width: 40%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.button__comprar {
-  padding: 10px;
-  margin: 10px;
-}
-
 .video__publicitario {
   margin: 0px 0px 0px 30px;
   padding: 20px;

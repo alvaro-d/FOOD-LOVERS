@@ -1,6 +1,9 @@
 @import"variables";
-@import "footer";
+@import"operators.scss";
 @import"nav";
+@import "header";
+@import "main";
+@import "footer";
 @import"mediaquieries";
 
 *{
@@ -9,9 +12,9 @@
     box-sizing:border-box ;
 }
 
-selector { 
+/* select{ 
     propiedades:red;
-}
+} */
 
 h1 {
     color:black;
@@ -39,121 +42,36 @@ ul{
     margin: 0 0 0 40px;
 }
 
+/* main-index */
 
-header{
-    position: sticky;
-    top: 0px;
-    background-color: gray;
-}
 
-.header__texto--envios{
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    background-color: yellow;
-}
 
-.header__texto{
-    background-color: white;
-    font-size: 20px;
-    text-align: center;
-}
-
-.header__nav{
-    display: flex;
-    flex-wrap:wrap;
-
-}
-
-.header__lista{ 
-    display: flex;
-    list-style: none;
-    padding: 5px 10px;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content:flex-end;
-    flex-grow: 3;
+.nav__barra{
+    position: relative;
+    z-index: 30px;
 }
 
 
-.header__icono{
-    display: inline;
-    display: flex;
-    justify-content: flex-start;
-}
 
-.header__item{
-    display: flex;
-    padding: 7px;
 
-}
 
-.header__item a{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.titulo__principal {
-    text-align: center;
-    font-size: 40px;
-    padding: 10px;
-}
-
-/* MAIN-INDEX */
-
-/* main {
-
-} */
 /* COMIENZA HOME */ 
-.main__principal{
-    display: grid;
-    height: 100vh;
-    background-image: url(../recursos/portada-uno.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-template-columns: 1fr 2fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
-}
 
-button{
-    width: 500px;
-    height: 70px;
-    font-size: 32px;
-    background-color: yellow;
-    border: yellow solid 10px;
-    border-radius: 15px;
-    padding: 10px;
 
-}
 
-button .card__button :hover{
+
+
+
+button .card__button :hover { 
     transform: scale(1.25,1.25);
 }
 
-.main__boton{
-    color:  rgb(76, 114, 238);
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: grid;
-    justify-content: center;
-    align-items: flex-end;
-    padding:10px;
-}
 
 .main__boton :hover {
     transform: scale(1.05,1.05);
 }
 
-button{
-    width: 500px;
-    height: 70px;
-    font-size: 32px;
-    background-color: yellow;
-    border: yellow solid 10px;
-    border-radius: 15px;
-    padding: 10px;
-}
+
 
 
 /* TERMINA HOME */ 
@@ -174,8 +92,7 @@ button{
 }
 
 .card {
-    width: 300px;
-    height: auto;
+    @extend .card-dimensiones;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -185,10 +102,7 @@ button{
     border: 1px solid #d4d4d4;
 }
 
-/* .card :hover{
-    transform: scale(1.05,1.05);
 
-} */
 
 
 .card__img{
@@ -210,43 +124,19 @@ button{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color: yellow;
+    background-color: rgb(5, 29, 107);
     font-size: 16px;
-    border: yellow solid 10px;
+    border: rgb(90, 92, 97) solid 10px;
     border-radius: 15px;
     padding: 5px;
     margin: auto;
 }
 
 
-
-
 /* TERMINA PRODUCTOS */
 
 /* SECCION NOSOTROS  */
 
-.imagen{
-    width:100%;
-    height:auto;
-    display: flex;
-    flex-wrap: wrap;
-    border: solid #d4d4d4
-}
-
-.imagen__img{
-    width: 60%;
-    height: auto;
-}
-
-.imagen__info{
-    margin: auto;
-    padding: 10px;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
 
 

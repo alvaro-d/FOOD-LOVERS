@@ -1,0 +1,10 @@
+header {
+  position: relative;
+  top: 0px;
+}
+.header__texto--envios {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  background-color: green;
+}/*# sourceMappingURL=header.css.map */

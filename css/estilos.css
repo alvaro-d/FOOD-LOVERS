@@ -7,7 +7,7 @@
     box-sizing:border-box ;
 }
 
-selector { 
+select{ 
     propiedad: red;
 }
 
@@ -105,9 +105,7 @@ header{
 
 /* MAIN-INDEX */
 
-main{
 
-}
 /* COMIENZA HOME */ 
 .main__principal{
     display: grid;
