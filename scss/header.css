@@ -1,6 +1,5 @@
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   top: 0px;
   background-color: gray;
 }
