@@ -24,7 +24,7 @@
             <nav class="nav navbar navbar-expand-lg bg-secondary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"></a>
-                    <img src="../recursos/logo_blanco.png" alt="logo"  class="d-inline-block align-text-top" width="80px" height="80px">
+                    <img src="../recursos/logo_blanco.png" href="index.html" alt="logo"  class="d-inline-block align-text-top" width="80px" height="80px">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -51,7 +51,7 @@
             </nav>
     </header>
     <main>
-        <section>
+        <section> <!-- COMIENZA CAROUSEL -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -79,53 +79,78 @@
                 </button>
             </div>
         </section>
-        <!-- TERMINA HOME -->
-        <!--COMIENZA PRODUCTOS -->
-        <section class="container">
-            <h1 class="container__titulo"> NUESTROS PRODUCTOS </h1>
-            <article class="card">
-                <img class="card__img" src="../recursos/tipos-cervezas.jpg" alt=" imagen de cervezas">
-                <div class="card__info">
-                    <h2> Cervezas</h2>
-                    <p> ¿Cual es tu estilo de cerveza preferido?</p>
-                    <button class="card__button"> Agregar al carrito </button>
+        <section class="bloque">
+            <article class="bloque_reservas">
+                <div class="bloque_reservas_uno">
+                    <a href="paginas/productos.html">
+                    <img class="bloque_reservas_img" src="../recursos/reservas.png" alt="reservas">
+                    </a>
                 </div>
-            </article>
-            <article class="card">
-                <img class="card__img" src="../recursos/jamon.jpg" alt=" imagen de jamon">
-                <div class="card__info">
-                    <h2> Jamones</h2>
-                    <p>Todos ellos con un exquisito sabor fruto de su elaboración tradicional</p>
-                    <button class="card__button"> Agregar al carrito </button>
-                </div>
-            </article>
-            <article class="card">
-                <img class="card__img" src="../recursos/queso.jpg" alt=" imagen de queso">
-                <div class="card__info">
-                    <h2> Quesos</h2>
-                    <p>¿Cómo disfrutarlo? Es perfecto para la picada antes del asado</p>
-                    <button class="card__button"> Agregar al carrito </button>
-                </div>
-            </article>
-            <article class="card">
-                <img class="card__img" src="../recursos/conservas.jpg" alt=" imagen de conservas">
-                <div class="card__info">
-                    <h2> Conservas </h2>
-                    <p>Platos tradicionales listos para comer que te harán sentir como en casa</p>
-                    <button class="card__button"> Agregar al carrito </button>
+                <div class="bloque_reservas_dos">
+                    <a href="paginas/productos.html">
+                    <img class="bloque_reservas_img" src="../recursos/pedidos.png" alt="pedidos">
+                    </a>
                 </div>
             </article>
         </section>
-        <!-- TERMINA PRODUCTOS  -->
         <section>
-            <article>
-                <div class="bloque_reservas">
-                    <div class="bloque__reservas--a">
-                        <p>RESERVAS FOOD LOVERS</p>
+                <div class="bloque_pasion">
+                    <h2>PASIÓN</h2>
+                    <P>Llevamos muchos años elaborando los más exquisitos y selectos embutidos.</P>
+                <div>
+        </section>
+        <section>
+            <div class="bloque_container">
+                <div class="bloque_container_info">
+                    <p>Nuestra dedicación y pasión por lo que hacemos, nos ha convertido en la marca preferida de los exploradores, personas apasionadas que buscan opciones extraordinarias que les permita disfrutar al máximo cada experiencia de sabor.
+                        Nuestro principal compromiso: Es mantener los más altos estándares de calidad y el más exquisito sabor en cada uno de nuestros productos para afianzar el respeto y confianza de los consumidores.
+                    </p>
+                </div>
+                <div class="bloque_container_img">
+                    <img src="../recursos/embutidos-produ.jpg" height="550px" width="400px" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container">  <!--COMIENZA PRODUCTOS -->
+            <h2 class="container__titulo"> NUESTROS PRODUCTOS </h2>
+        </section>
+        <section>
+            <div class="card-group row row-cols-1 p-5">
+                <div class="card h-100 text-center" style="width: 18rem;">
+                    <img src="../recursos/cerveza-uno.jpg" class="card-img-top" alt="imagen-de-cerveza">
+                    <div class="card-body">
+                        <h5 class="card-title">CERVEZAS</h5>
+                        <p class="card-text">¿Cual es tu estilo de cerveza preferido?</p>
+                        <a href="paginas/productos.html" class="btn btn-dark">comprar</a>
                     </div>
                 </div>
-            </article>
+                <div class="card h-100 text-center" style="width: 18rem;">
+                    <img src="../recursos/Jamon.jpg" class="card-img-top" alt="imagen-de-embutido">
+                    <div class="card-body">
+                        <h5 class="card-title">JAMONES</h5>
+                        <p class="card-text">Todos ellos con un exquisito sabor fruto de su elaboración tradicional</p>
+                        <a href="paginas/productos.html" class="btn btn-dark">comprar</a>
+                    </div>
+                </div>
+                <div class="card h-100 text-center" style="width: 18rem;">
+                    <img src="../recursos/Queso.jpg" class="card-img-top" alt="imagen-de-quesos">
+                    <div class="card-body">
+                        <h5 class="card-title">QUESOS</h5>
+                        <p class="card-text">¿Cómo disfrutarlo? Es perfecto para la picada antes del asado</p>
+                        <a href="paginas/productos.html" class="btn btn-dark">comprar</a>
+                    </div>
+                </div>
+                <div class="card h-100 text-center" style="width: 18rem;">
+                    <img src="../recursos/conservas.jpg" class="card-img-top" alt="imagen-de-conservas">
+                    <div class="card-body">
+                        <h5 class="card-title">CONSERVAS</h5>
+                        <p class="card-text">Platos tradicionales listos para comer que te harán sentir como en casa</p>
+                        <a href="paginas/productos.html" class="btn btn-dark">comprar</a>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- TERMINA PRODUCTOS  -->
         <section class="ws">
             <a href="https://www.whatsapp.com/?lang=es"target="_blank"><img class="ws__img" src="../recursos/whatsapp-square-brands.svg" alt="imagen de wsp"></a>
         </section>

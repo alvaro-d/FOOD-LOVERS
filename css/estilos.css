@@ -1,67 +1,56 @@
-<<<<<<< HEAD
-=======
+@charset "UTF-8";
+* {
+  margin: 0px;
+  /* MARGEN EXTERNO */
+  padding: 0px;
+  /* MARGEN INTERNO */
+  box-sizing: border-box; }
 
-*{
-    margin: 0px;/* MARGEN EXTERNO */
-    padding: 0px;/* MARGEN INTERNO */
-    box-sizing:border-box ;
-}
-
-select{ 
+/* select{ 
     propiedad: red;
 }
-
+ */
 h1 {
-    color:black;
-    padding: 0 20px;
-}
+  color: black;
+  padding: 0 20px; }
 
-h3{
-    color: black;
-    padding: 20px;
-}
+h3 {
+  color: black;
+  padding: 20px; }
 
 body {
-    font-family: 'Roboto', sans-serif;
-}
+  font-family: 'Roboto', sans-serif; }
+
 h1 {
-    font-family: 'Courgette', cursive;
-}
+  font-family: 'Courgette', cursive; }
+
 h2 {
-    font-family: 'Courgette', cursive;
-}
+  font-family: 'Courgette', cursive; }
 
-ul{
-    list-style: none; /* elimina el puntito de la viñeta */
-    padding: 0 40px;
-    margin: 0 0 0 40px;
-}
+ul {
+  list-style: none;
+  /* elimina el puntito de la viñeta */
+  padding: 0 40px;
+  margin: 0 0 0 40px; }
 
+header {
+  position: sticky;
+  top: 0px; }
 
-header{
-    position: sticky;
-    top: 0px;
-    
-}
+.container-fluid {
+  padding: 10px; }
 
-.container-fluid{
-    padding: 10px;
-    
-}
-
-.header__texto--envios{
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(248, 180, 54);
-}
+.header__texto--envios {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f8b436; }
 
 /* .header__texto{
     background-color: white;
     font-size: 20px;
     text-align: center;
 } */
-
 /* .header__nav{
     display: flex;
     flex-wrap:wrap;
@@ -77,13 +66,10 @@ header{
     justify-content:flex-end;
     flex-grow: 3;
 } */
-
-
-.header__icono{
-    display: inline;
-    display: flex;
-    justify-content: flex-start;
-}
+.header__icono {
+  display: inline;
+  display: flex;
+  justify-content: flex-start; }
 
 /* .header__item{
     display: flex;
@@ -96,234 +82,252 @@ header{
     color: white;
     text-decoration: none;
 } */
-
 .titulo__principal {
-    text-align: center;
-    font-size: 40px;
-    padding: 10px;
-}
+  text-align: center;
+  font-size: 40px;
+  padding: 10px; }
 
 /* MAIN-INDEX */
+/* COMIENZA HOME */
+.main__principal {
+  display: grid;
+  height: 100vh;
+  background-image: url(../recursos/portada-uno.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr; }
 
+button {
+  width: 500px;
+  height: 70px;
+  font-size: 32px;
+  background-color: yellow;
+  border: yellow solid 10px;
+  border-radius: 15px;
+  padding: 10px; }
 
-/* COMIENZA HOME */ 
-.main__principal{
-    display: grid;
-    height: 100vh;
-    background-image: url(../recursos/portada-uno.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-template-columns: 1fr 2fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
-}
+button .card__button :hover {
+  transform: scale(1.25, 1.25); }
 
-button{
-    width: 500px;
-    height: 70px;
-    font-size: 32px;
-    background-color: yellow;
-    border: yellow solid 10px;
-    border-radius: 15px;
-    padding: 10px;
-
-}
-
-button .card__button :hover{
-    transform: scale(1.25,1.25);
-}
-
-.main__boton{
-    
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding:10px;
-}
+.main__boton {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px; }
 
 .main__boton :hover {
-    transform: scale(1.05,1.05);
-}
+  transform: scale(1.05, 1.05); }
 
-button{
-    width: 500px;
-    height: 70px;
-    font-size: 32px;
-    background-color: yellow;
-    border: yellow solid 10px;
-    border-radius: 15px;
-    padding: 10px;
-}
+button {
+  width: 500px;
+  height: 70px;
+  font-size: 32px;
+  background-color: yellow;
+  border: yellow solid 10px;
+  border-radius: 15px;
+  padding: 10px; }
 
-
-/* TERMINA HOME */ 
-
+/* TERMINA HOME */
 /* COMIENZA PRODCUTOS */
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
-.container__titulo{
-    width: 100%;
-    text-align: center;
-    margin: 50px;
-    margin-bottom: 20px;
-}
+.container__titulo {
+  width: 100%;
+  text-align: center;
+  margin: 50px;
+  margin-bottom: 20px; }
 
 .card {
-    width: 300px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: auto;
-    margin:auto;
-    align-items: center;
-    border: 1px solid #d4d4d4;
-}
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: auto;
+  margin: auto;
+  align-items: center;
+  border: 1px solid #d4d4d4; }
 
 /* .card :hover{
     transform: scale(1.05,1.05);
 
 } */
+.card__img {
+  width: 100%;
+  height: 100%; }
 
-
-.card__img{
-    width: 100%;
-    height: 100%;
-}
-
-.card__info{
-    width:auto;
-    padding: 10px;
-    margin:5px;
-}
-
+.card__info {
+  width: auto;
+  padding: 10px;
+  margin: 5px; }
 
 .card__button {
-    width:auto;
-    height:auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    background-color: yellow;
-    font-size: 16px;
-    border: yellow solid 10px;
-    border-radius: 15px;
-    padding: 5px;
-    margin: auto;
-}
-
-
-
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+  font-size: 16px;
+  border: yellow solid 10px;
+  border-radius: 15px;
+  padding: 5px;
+  margin: auto; }
 
 /* TERMINA PRODUCTOS */
 /* CARROUSEL */
-
-
 /* SECCION NOSOTROS  */
+.imagen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #d4d4d4; }
 
-.imagen{
-    width:100%;
-    height:auto;
-    display: flex;
-    flex-wrap: wrap;
-    border: solid #d4d4d4
-}
+.imagen__img {
+  width: 60%;
+  height: auto; }
 
-.imagen__img{
-    width: 60%;
-    height: auto;
-}
+.imagen__info {
+  margin: auto;
+  padding: 10px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
-.imagen__info{
-    margin: auto;
-    padding: 10px;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+.button__comprar {
+  padding: 10px;
+  margin: 10px; }
 
-
-
-
-
-.button__comprar{
-    padding: 10px;
-    margin: 10px;
-}
-
-
-
-
-.video__publicitario{
-    margin: 0px 0px 0px 30px;
-    padding: 20px;
-}
+.video__publicitario {
+  margin: 0px 0px 0px 30px;
+  padding: 20px; }
 
 .form__nombre {
-    margin: 0px 0px 0px 30px;
-    /* ARRIBA DERECHA ABAJO IZQUIERDA */
-    /* ARRIBA ABAJO IZQUIERDA DERECHA */
-} 
+  margin: 0px 0px 0px 30px;
+  /* ARRIBA DERECHA ABAJO IZQUIERDA */
+  /* ARRIBA ABAJO IZQUIERDA DERECHA */ }
 
-.form__mail{
-    margin: 0px 0px 0px 30px;
-}
+.form__mail {
+  margin: 0px 0px 0px 30px; }
 
-.form__telefono{
-    margin: 0px 0px 0px 30px;
-}
+.form__telefono {
+  margin: 0px 0px 0px 30px; }
 
 .form__selecciona-el-dia {
-    margin: 0px 0px 0px 30px;
-}
+  margin: 0px 0px 0px 30px; }
 
-.form__selecciona-el-horario{
-    margin: 0px 0px 0px 30px;
-}
+.form__selecciona-el-horario {
+  margin: 0px 0px 0px 30px; }
 
 .button__enviar {
-    margin: 0px 0px 0px 30px;
-    padding: 5px;
-}
+  margin: 0px 0px 0px 30px;
+  padding: 5px; }
 
-.button__borrar{
-    margin: 0px 0px 0px 30px;
-    padding: 5px;
-}
-.ws{
-    position: sticky;
-    bottom: 0px;
-    right: 10px;
-    left: auto;
-}
-.ws__img{
-    width: 70px;
-}
+.button__borrar {
+  margin: 0px 0px 0px 30px;
+  padding: 5px; }
 
-footer{
-    display: grid;
-    grid-template-areas:"indice mapa redes"
-                        "indice mapa formas-de-pago"; 
-    background-color: rgb(248, 180, 54);
-    padding: 24px;
-}
+.ws {
+  position: sticky;
+  bottom: 0px;
+  right: 10px;
+  left: auto; }
+  .ws__img {
+    width: 70px; }
 
-.footer__indice{
-    grid-area: indice;
-}
+/* BLOQUE DE RESERVAS Y PEDIDOS */
+.bloque {
+  width: auto;
+  height: auto;
+  display: flex; }
+  .bloque .bloque_reservas {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column; }
+  .bloque .bloque_reservas_uno {
+    background-color: green;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column; }
+    .bloque .bloque_reservas_uno .bloque_reservas_img {
+      width: auto;
+      height: auto;
+      display: flex; }
+  .bloque .bloque_reservas_dos {
+    background-color: #cf4c18;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column; }
+    .bloque .bloque_reservas_dos .bloque_reservas_img {
+      width: auto;
+      height: auto;
+      display: flex; }
 
-.footer__mapa{
-    grid-area: mapa;
-}
+.bloque_pasion {
+  font-size: xx-large;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column; }
+
+.bloque_container {
+  background-color: white;
+  font-size: x-large;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex; }
+  .bloque_container .bloque_container_info {
+    width: 50%;
+    height: auto;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .bloque_container .bloque_container_img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+footer {
+  display: grid;
+  grid-template-areas: "indice mapa redes" "indice mapa formas-de-pago";
+  background-color: #f5e278;
+  padding: 24px; }
+  footer .footer__indice {
+    grid-area: indice; }
+  footer .footer__mapa {
+    grid-area: mapa; }
 
 /* .container-footer {
     width:auto;
@@ -333,59 +337,44 @@ footer{
     justify-content: center;
     justify-content:flex-end; 
 } */
-
 .footer__indice ul li {
-    font-size: 16px;
-    text-decoration: none;
-    padding: 5px;
-}
-
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px; }
 
 /* .background__footer{
     background-color: gray;
 } */
-
-.footer__redes{
-    grid-area:redes;
-    display: flex;
-    justify-content:center;
-    align-items: flex-end;
-
-}
+.footer__redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
 
 .iconos {
-    /* display: block; */
-    width: 50px;
-    padding: 5px;
-    margin: 12px;
-}
+  /* display: block; */
+  width: 50px;
+  padding: 5px;
+  margin: 12px; }
 
-.iconos:hover{
-    transform: scale(1.15,1.15);
+.iconos:hover {
+  transform: scale(1.15, 1.15); }
 
-}
+.footer__formas-de-pago {
+  grid-area: formas-de-pago;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
 
-.footer__formas-de-pago{
-    grid-area: formas-de-pago;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-/* MEDIA DE CELULAR */ 
-
+/* MEDIA DE CELULAR */
 /* @media ( min-width 320px ) and ( max-width 575px) {
     }
     
     /* BARRA DE NAVEGACION */
-
-    
-
 /* .header__lista ul {
     flex-direction: column;
 } /* 
-/*  MAIN- INDEX  */ 
-
+/*  MAIN- INDEX  */
 /* .main__boton button {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -393,13 +382,8 @@ footer{
     align-items:center;
 }
  */
-
 /* FOOTER */
-
 /* MEDIA QUIERIE DE TABLET  */
-
 /* @media ( min-width 576px ) and ( max-width 992px) {
 
 } */
-
->>>>>>> boostrap
